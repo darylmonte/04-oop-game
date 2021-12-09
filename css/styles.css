@@ -1,5 +1,6 @@
 /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /* Variables */
 
@@ -46,6 +47,24 @@ h1 {
   font-size: 30px;
 }
 
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+	60% {
+		-webkit-transform: translateY(-1px);
+		-ms-transform:     translateY(-1px);
+		transform:         translateY(-1px)
+	}
+}
+
 button {
   margin: 6px;
   border: 1px solid transparent;
@@ -58,6 +77,10 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 #btn__reset {
@@ -104,7 +127,7 @@ button {
 }
 
 .space {
-  width: 15px;
+  width: 35px;
 }
 
 
