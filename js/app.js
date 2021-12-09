@@ -36,7 +36,6 @@ window.addEventListener('keydown', (e) => {
   });
 
 // CUSTOMIZATIONS
-document.querySelector('.start').style.backgroundColor = '#212F3D';
 document.querySelector('h2.title').style.fontFamily = "'Special Elite', cursive";
 document.querySelector('h2.header').style.fontFamily = "'Special Elite', cursive";
 buttons.forEach(button => button.style.fontFamily = "'Special Elite', cursive");
